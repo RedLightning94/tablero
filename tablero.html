@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero=parseInt(prompt("elige tamaño:"));
+        let fila;
+        for (let i= 1; i<=numero; i=i+1) {
+            if(i%2==0){
+                fila="X";
+                for (let j = 1; j < numero; j=j+1) {
+                    if(j%2==0){
+                        fila=fila+"X";
+                    }else{
+                        fila=fila+"O";
+                    }
+
+            }
+            }else{
+                fila="O";
+                for (let j = 1; j < numero; j=j+1) {
+
+                    if(j%2==0){
+                        fila=fila+"O";
+                    }else{
+                        fila=fila+"X";
+                    }
+            }
+            }
+            
+          console.log(fila);  
+          fila="";
+        }
+
+
+    </script>
+</body>
+</html>
